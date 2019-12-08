@@ -4,6 +4,13 @@
 
 using std::vector;
 
+/*
+*  Find out the majority from the left side and the right side.
+*  Vote for the final majority.
+*  Test the final majority is over the half of the whole sequence.
+*
+*/
+
 int get_majority_element(vector<int> &a, int left, int right) {
   if (left == right) return a[left];
   if (left + 1 == right) return a[left];
